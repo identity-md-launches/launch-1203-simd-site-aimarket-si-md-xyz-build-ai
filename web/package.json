@@ -1,0 +1,31 @@
+{
+  "name": "pepe-intelligence-terminal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test src/engine.test.ts",
+    "test:browser": "tsx scripts/check-browser.mjs",
+    "format": "prettier --write src scripts vite.config.ts index.html"
+  },
+  "dependencies": {
+    "lucide-react": "0.468.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@types/node": "22.19.7",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "playwright": "1.64.0",
+    "prettier": "3.9.9",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  }
+}
